@@ -21,7 +21,7 @@ header {
 .searchcontainer {
     width: 275px;
     height: auto;
-    margin-top: -350px;
+    margin-top: -450px;
 }
 
 .maincontainer {
@@ -86,7 +86,8 @@ input {
 .todays-weather {
     border: 2px solid purple;
     border-radius: 10px;
-    width: 700px;
+    padding-left: 10px;
+    width: 775px;
     height: 200px;
     margin-top: -112px;
     margin-left: 300px;
@@ -113,17 +114,19 @@ input {
 #weatherContainer {
     height: auto;
     width: auto;
+    padding: 10px;
     border: 2px solid plum;
     border-radius: 10px;
 }
 
 /* individual days weather */
 .icons {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: row;
     color: white;
     background: rgb(1, 1, 57);
-    height: 140px;
-    width: 115px;
+    height: 185px;
+    width: 140px;
     margin: 5px;
     border: 1px solid black;
 }
@@ -168,10 +171,10 @@ input {
 }
 
 /* weather img for the days weather */
-.imgClass {
+/* .imgClass {
     height: 50px;
     width: 50px;
-}
+} */
 
 /* date for weather being displayed */
 .weather {

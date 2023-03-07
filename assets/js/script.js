@@ -27,22 +27,32 @@ console.log(data)
 
 console.log(data)
 
-
-
-for (let i = 0; i < data.list.length; i += 8 ) {
-    //this should give us one hour forecast for each of the five days
-    console.log(data.list[i])
-    document.getElementById('day'+(i+2))
+for (let i = 0; i < data.list.length; i += 8) {
+    // get the DOM element for the current day
+    let dayElement = document.getElementById('day' + (i/8 + 2));
+  
+    // get the weather data for the current day
+    let dayData = data.list[i];
+  
+    // update the DOM with the weather information
+    dayElement.innerHTML = `
+      <h2>${new Date(dayData.dt_txt).toLocaleDateString('en-US', {weekday: 'long'})}</h2>
+      <img src="http://openweathermap.org/img/wn/${dayData.weather[0].icon}.png" alt="${dayData.weather[0].description}">
+      <p>${dayData.weather[0].description}</p>
+      <p>High: ${dayData.main.temp_max.toFixed(0)}&deg;F</p>
+      <p>Low: ${dayData.main.temp_min.toFixed(0)}&deg;F</p>
+    `;
+  
+    // log the weather data to the console
+    console.log(dayData);
   }
 
 })
 })
-
 .catch(err => alert("Something went wrong. Please Try again."))
 }
-
-
 searchButton.addEventListener("click", GetInfo)
+
 
 
 
@@ -63,8 +73,6 @@ searchButton.addEventListener("click", GetInfo)
 //         return day + d.getDay();
 //     }
 // }
-
-
 
 
 
