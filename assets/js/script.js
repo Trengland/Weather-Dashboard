@@ -47,6 +47,7 @@ for (let i = 0; i < data.list.length; i += 8) {
     console.log(dayData);
   }
 
+
 })
 })
 .catch(err => alert("Something went wrong. Please Try again."))
