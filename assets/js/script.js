@@ -1,6 +1,5 @@
 var searchButton = document.querySelector(".search-button")
 
-
 function GetInfo() {
     var newName = document.getElementById("cityInput");
     var cityName = document.getElementById("cityName");
@@ -41,18 +40,21 @@ for (let i = 0; i < data.list.length; i += 8) {
       <p>${dayData.weather[0].description}</p>
       <p>High: ${dayData.main.temp_max.toFixed(0)}&deg;F</p>
       <p>Low: ${dayData.main.temp_min.toFixed(0)}&deg;F</p>
+      <p>wind: ${dayData.wind.speed.toFixed(0)}MPH</p>
+      <p>wind: ${dayData.main.humidity.toFixed(0)}%</p>
     `;
   
     // log the weather data to the console
     console.log(dayData);
   }
-
-
+      searchHistory() //Calling the function
 })
 })
 .catch(err => alert("Something went wrong. Please Try again."))
 }
 searchButton.addEventListener("click", GetInfo)
+
+
 
 
 
@@ -77,15 +79,14 @@ searchButton.addEventListener("click", GetInfo)
 
 
 
-// // function to show search history?
-// function searchHistory() {
-//     var recentSearch = []
-//     recentSearch.push($('#cityInput').val());
+function searchHistory() {
+    var recentSearch = []
+    recentSearch.push($('#cityInput').val());
 
-//     $.each(recentSearch, function (index, value) {
-//         const button = document.createElement("button");
-//         button.innerHTML = value;
-//         document.getElementById("searchHistory").appendChild(button);
-//     })
-// }
+    $.each(recentSearch, function (index, value) {
+        const button = document.createElement("button");
+        button.innerHTML = value;
+        document.getElementById("searchHistory").appendChild(button);
+    })
+}
 

@@ -87,8 +87,8 @@ input {
     border: 2px solid purple;
     border-radius: 10px;
     padding-left: 10px;
-    width: 775px;
-    height: 200px;
+    width: 825px;
+    height: 190px;
     margin-top: -112px;
     margin-left: 300px;
     margin-bottom: 20px;
@@ -125,8 +125,8 @@ input {
     flex-direction: row;
     color: white;
     background: rgb(1, 1, 57);
-    height: 185px;
-    width: 140px;
+    height: 195px;
+    width: 150px;
     margin: 5px;
     border: 1px solid black;
 }
