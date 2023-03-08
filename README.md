@@ -1,13 +1,10 @@
 <Personal Weather Dashboard>
-A weather dashboard that allows you to search the weather in any city, and remembers past cities that interested you for quick access.
-
-  
 GitHub Pages - https://github.com/Trengland/Weather-Dashboard-New 
   
 LIVE URL - https://trengland.github.io/Weather-Dashboard-New/ 
 
 
-
+A weather dashboard that allows you to search the weather in any city, and remembers past cities that interested you for quick access.
 - The motivation behind this program is to help people save all of their most frequently searched cities weather information in one place.
 - The program was built to make it simple for people to check weather in all cities of interest, in one place.
 - While building this project I learned about how JavaScript functions work with API's
