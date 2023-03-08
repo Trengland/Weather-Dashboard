@@ -1,5 +1,5 @@
 <Personal Weather Dashboard>
-#A weather dashboard that allows you to search the weather in any city, and remembers past cities that interested you for quick access.
+A weather dashboard that allows you to search the weather in any city, and remembers past cities that interested you for quick access.
   
 GitHub Pages - https://github.com/Trengland/Weather-Dashboard-New 
   
